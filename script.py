@@ -50,7 +50,7 @@ with open("scriptImportaIBPL.sql", "w") as f:
 
 import os
 #Abre o arquivo
-file = open("scriptImportaIBPL.sql", "r")
+file = open("scriptImportaIBPT.sql", "r")
 #Verifica a quantidade de linhas e fecha o arquivo
 lines = file.readlines()
 file.close()
@@ -62,7 +62,7 @@ for i in range(num_files):
     new_file.writelines(lines[i*lines_per_file:(i+1)*lines_per_file])
     new_file.close()
 #Apaga o arquivo
-os.remove("scriptImportaIBPL.sql")
+os.remove("scriptImportaIBPT.sql")
 import logging 
 logging.basicConfig(level=logging.WARNING) 
 logging.warning("Script executado com sucesso")
