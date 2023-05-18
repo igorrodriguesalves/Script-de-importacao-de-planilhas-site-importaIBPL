@@ -38,7 +38,7 @@ for arquivo in arquivos:
             dados.append(tupla)
 
 # Abrir um arquivo sql em modo escrita
-with open("scriptImportaIBPL.sql", "w") as f:
+with open("scriptImportaIBPT.sql", "w") as f:
     # Percorrer cada tupla da lista de valores
     for tupla in dados:
         # Formatar a tupla como uma string separada por vírgulas
